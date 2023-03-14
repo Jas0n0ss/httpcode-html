@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+        <link rel="shortcut icon" type="image/png" href="https://www.freepnglogos.com/uploads/linux-png/gnu-linux-logo-penguin-svg-titanui-40.png">
+	<style type="text/css">
+		body {
+			background-image: url('img/wallhaven-Ocean.jpg');
+			background-size: cover;
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			position: relative;
+		}
+		
+		.logo {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+		}
+		
+		nav {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 50px;
+		}
+		
+		nav a {
+			display: block;
+			margin: 10px;
+			padding: 10px 20px;
+			background-color: rgba(255, 255, 255, 0.8);
+			border-radius: 5px;
+			color: #333;
+			text-decoration: none;
+			text-align: center;
+			font-size: 20px;
+			font-weight: bold;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+			transition: all 0.3s ease-in-out;
+		}
+		
+		nav a:hover {
+			transform: scale(1.1);
+			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+		}
+		
+		h1 {
+			text-align: center;
+			margin-top: 100px;
+			color: white;
+			font-size: 48px;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+		}
+		/* Set styles for footer */
+      		#footer {
+        		position: absolute;
+        		bottom: 0;
+        		left: 50%;
+       		        transform: translate(-50%);
+        		color: white;
+        		font-size: 14px;
+        		margin-bottom: 10px;
+      		}		
+	</style>
+</head>
+<body>
+	<div class="container">
+        <a href="https://www.linuxprobe.com" title="Linux"><img src="https://www.freepnglogos.com/uploads/linux-png/gnu-linux-logo-penguin-svg-titanui-40.png" width="200"/></a>
+		<nav>
+	                <a href="http://192.168.4.1">OpenWrt</a>
+	                <a href="http://v.ms">VMware</a>
+			<a href="http://v.bo.ms">Jellyfin</a>
+		</nav>
+		<nav>
+			<a href="http://alist.bo.ms">Alsit</a>
+			<a href="http://d.bo.ms">Aria2</a>
+			<a href="http://sp.bo.ms">Speedtest</a>
+			<a href="http://x.bo.ms">Xunlei</a>
+		</nav>
+        <a href="https://www.youtube.com" title="Youtube"><img src="https://www.freepnglogos.com/uploads/youtube-logo-png/youtube-transparent-youtube-icon-29.png" width="200"/></a>
+    </div>
+    <div id="footer">
+      Powered by@Openresty
+    </div>
+</body>
+</html>
