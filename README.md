@@ -15,7 +15,7 @@ server {
             random_index off;
             index  index.html index.htm;
             
-						if ($geoip_country_code != CN) {
+	    if ($geoip_country_code != CN) {
                return 403;
                }
         }
