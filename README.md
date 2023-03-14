@@ -14,9 +14,10 @@ server {
             root   html;
             random_index off;
             index  index.html index.htm;
-            #if ($geoip_country_code = CN) {
-            #   return 403;
-            #   }
+            
+						if ($geoip_country_code != CN) {
+               return 403;
+               }
         }
 
         error_page  404              /404.html;
